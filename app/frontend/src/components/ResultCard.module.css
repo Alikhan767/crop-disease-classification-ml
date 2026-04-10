@@ -1,0 +1,84 @@
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeUp 0.35s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid;
+}
+
+.icon { font-size: 2.2rem; line-height: 1; }
+
+.meta { flex: 1; }
+
+.plant {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.disease {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0.1rem 0 0;
+}
+
+.badge {
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+/* Confidence */
+.confSection { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.confLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.confLabel strong { color: #1a1a1a; }
+
+.confBar {
+  height: 10px;
+  background: #f0f0f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.confFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+/* Footer */
+.time {
+  text-align: right;
+  font-size: 0.78rem;
+  color: #bbb;
+  margin: 0;
+}

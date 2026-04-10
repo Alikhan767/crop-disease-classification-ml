@@ -1,0 +1,56 @@
+.wrapper { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #444;
+  margin: 0;
+}
+
+.list { display: flex; flex-direction: column; gap: 0.45rem; }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rank {
+  font-size: 0.78rem;
+  color: #999;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.name {
+  font-size: 0.88rem;
+  color: #333;
+  width: 200px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.barWrap {
+  flex: 1;
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+.pct {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #555;
+  width: 44px;
+  text-align: right;
+  flex-shrink: 0;
+}
