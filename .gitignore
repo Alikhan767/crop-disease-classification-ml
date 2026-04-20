@@ -3,3 +3,4 @@ venv/
 *.pt
 checkpoints/
 dataset/
+checkpoints_2/
